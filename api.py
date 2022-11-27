@@ -115,7 +115,6 @@ class PetFriends:
             result = res.json()
         except json.decoder.JSONDecodeError:
             result = res.text
-        print(status)
         return status, result
 
     def add_foto_of_pet(self, auth_key: json, pet_id: str, pet_photo: str) -> json:
@@ -135,5 +134,4 @@ class PetFriends:
             result = res.json()
         except json.decoder.JSONDecodeError:
             result = res.text
-        print(status)
         return status, result
